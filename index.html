@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,16 +14,29 @@
 
     <body>
         <!-- Header Section -->
-        <header class="flex items-center justify-between px-10 py-3">
-            <img src="./src/img/logo.png" alt="logo" />
+        <header
+            class="flex items-center justify-between px-10 py-3 bg-white dark:bg-slate-800"
+        >
+            <img
+                class="inline-block dark:hidden"
+                src="./src/img/logo.png"
+                alt="logo"
+            />
+            <img
+                class="hidden dark:inline-block"
+                src="./src/img/logo-for-dark.png"
+                alt="logo"
+            />
 
-            <ul class="flex items-center justify-center gap-5">
+            <ul
+                class="hidden lg:flex items-center justify-center gap-5 text-black dark:text-white"
+            >
                 <li>
                     <a class="px-4 py-2 text-redOrange" href="#">Home</a>
                 </li>
                 <li>
                     <a class="px-4 py-2 hover:text-redOrange" href="#"
-                        >About Us</a
+                        >About us</a
                     >
                 </li>
                 <li>
@@ -39,15 +52,19 @@
             </ul>
 
             <div class="flex items-center gap-5 h-full">
-                <button class="bg-redOrange text-white px-5 py-3 rounded-lg">
+                <button
+                    class="hidden sm:inline-block bg-redOrange hover:bg-transparent text-white hover:text-redOrange px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+                >
                     Register Interest
                 </button>
-                <button class="p-3 rounded-full bg-gray-100">
+                <button
+                    class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white transition-all duration-200 active:scale-95 mode-switch"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="1.5"
+                        stroke-width="2"
                         stroke="currentColor"
                         class="size-6"
                     >
@@ -58,7 +75,90 @@
                         />
                     </svg>
                 </button>
+
+                <div class="inline-block lg:hidden relative">
+                    <button
+                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white pBtn"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            class="size-6"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                            />
+                        </svg>
+                    </button>
+
+                    <nav
+                        class="hidden absolute top-[60px] right-0 w-56 bg-gray-100 shadow-lg py-5 rounded-lg pNav border border-redOrange"
+                    >
+                        <ul>
+                            <li
+                                class="hover:bg-redOrange hover:text-white cursor-pointer"
+                            >
+                                <a class="block py-2 px-7" href="#">Home</a>
+                            </li>
+                            <li
+                                class="hover:bg-redOrange hover:text-white cursor-pointer"
+                            >
+                                <a class="block py-2 px-7" href="#">About us</a>
+                            </li>
+                            <li
+                                class="hover:bg-redOrange hover:text-white cursor-pointer"
+                            >
+                                <a class="block py-2 px-7" href="#">Upskill</a>
+                            </li>
+                            <li
+                                class="hover:bg-redOrange hover:text-white cursor-pointer"
+                            >
+                                <a class="block py-2 px-7" href="#"
+                                    >Contact us</a
+                                >
+                            </li>
+                        </ul>
+
+                        <span
+                            class="block sm:hidden w-full h-[1px] bg-gray-400 my-5"
+                        ></span>
+
+                        <div class="flex sm:hidden flex-col gap-5 px-5">
+                            <button
+                                class="flex items-center justify-center gap-5 p-3 rounded-full bg-gray-100 hover:bg-redOrange hover:text-white border-2 border-black hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                                    />
+                                </svg>
+                                Switch Mode
+                            </button>
+                            <button
+                                class="bg-redOrange hover:bg-transparent text-white hover:text-redOrange px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+                            >
+                                Register Interest
+                            </button>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </header>
+
+        <script src="./src/index.js"></script>
     </body>
 </html>
