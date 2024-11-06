@@ -15,7 +15,7 @@
     <body>
         <!-- Header Section -->
         <header
-            class="flex items-center justify-between px-10 py-3 bg-white dark:bg-slate-800"
+            class="flex items-center justify-between px-10 py-3 bg-white dark:bg-slate-800 shadow-lg"
         >
             <img
                 class="inline-block dark:hidden"
@@ -159,6 +159,25 @@
             </div>
         </header>
 
-        <script src="./src/index.js"></script>
+        <script>
+            const pBtn = document.querySelector(".pBtn"),
+                pNav = document.querySelector(".pNav");
+
+            pBtn.addEventListener("click", () => {
+                pNav.classList.toggle("hidden");
+            });
+
+            const htmlTag = document.querySelector("html"),
+                modeSwitch = document.querySelector(".mode-switch"),
+                modeSwitch2 = document.querySelector(".mode-switch-2");
+
+            modeSwitch.addEventListener("click", function () {
+                htmlTag.classList.toggle("dark");
+            });
+
+            modeSwitch2.addEventListener("click", function () {
+                htmlTag.classList.toggle("dark");
+            });
+        </script>
     </body>
 </html>
