@@ -38,22 +38,36 @@
                 class="hidden lg:flex items-center justify-center gap-5 text-black dark:text-white"
             >
                 <li>
-                    <a class="px-4 py-2 text-redOrange" href="#">Home</a>
+                    <a
+                        class="px-4 py-2 text-redOrange transition-all duration-200"
+                        href="#"
+                    >
+                        Home
+                    </a>
                 </li>
                 <li>
-                    <a class="px-4 py-2 hover:text-redOrange" href="#"
-                        >About us</a
+                    <a
+                        class="px-4 py-2 hover:text-redOrange transition-all duration-200"
+                        href="#"
                     >
+                        About us
+                    </a>
                 </li>
                 <li>
-                    <a class="px-4 py-2 hover:text-redOrange" href="#"
-                        >Upskill</a
+                    <a
+                        class="px-4 py-2 hover:text-redOrange transition-all duration-200"
+                        href="#"
                     >
+                        Upskill
+                    </a>
                 </li>
                 <li>
-                    <a class="px-4 py-2 hover:text-redOrange" href="#"
-                        >Contact us</a
+                    <a
+                        class="px-4 py-2 hover:text-redOrange transition-all duration-200"
+                        href="#"
                     >
+                        Contact us
+                    </a>
                 </li>
             </ul>
 
@@ -65,7 +79,7 @@
                     Register Interest
                 </button>
                 <button
-                    class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white size-[50px] transition-all duration-200 active:scale-95 mode-switch"
+                    class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white size-[50px] transition-[scale] duration-200 active:scale-95 mode-switch"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -125,25 +139,27 @@
                         class="hidden absolute top-[60px] right-0 w-56 bg-gray-100 dark:bg-slate-800 shadow-lg py-5 rounded-lg phoneNav border border-redOrange"
                     >
                         <ul class="space-y-2">
-                            <li class="text-white bg-redOrange cursor-pointer">
+                            <li
+                                class="text-white bg-redOrange transition-all duration-200 cursor-pointer"
+                            >
                                 <a class="block py-2 px-7" href="#">Home</a>
                             </li>
                             <li
-                                class="hover:bg-redOrange hover:text-white dark:text-white cursor-pointer"
+                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
                             >
                                 <a class="block py-2 px-7" href="#">About us</a>
                             </li>
                             <li
-                                class="hover:bg-redOrange hover:text-white dark:text-white cursor-pointer"
+                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
                             >
                                 <a class="block py-2 px-7" href="#">Upskill</a>
                             </li>
                             <li
-                                class="hover:bg-redOrange hover:text-white dark:text-white cursor-pointer"
+                                class="hover:bg-redOrange hover:text-white dark:text-white transition-all duration-200 cursor-pointer"
                             >
-                                <a class="block py-2 px-7" href="#"
-                                    >Contact us</a
-                                >
+                                <a class="block py-2 px-7" href="#">
+                                    Contact us
+                                </a>
                             </li>
                         </ul>
 
@@ -372,7 +388,7 @@
 
         <!-- Learn Section -->
         <section
-            class="flex flex-col-reverse xl:flex-row items-center justify-between gap-10 px-8 sm:px-10 lg:px-24 py-10 my-20"
+            class="flex flex-col-reverse xl:flex-row items-center justify-between gap-10 px-8 sm:px-10 lg:px-24 py-10 mt-20 mb-0"
         >
             <!-- Learn Left Section -->
             <section
@@ -445,7 +461,7 @@
             <section
                 class="bg-white dark:bg-gray-900 rounded-3xl py-10 size-full xl:w-1/2 xl:h-[700px] space-y-7 sm:space-y-10 shadow-xl"
             >
-                <div>
+                <div class="flex justify-center">
                     <img
                         class="xl:h-[245px] object-contain inline-block dark:hidden"
                         src="./src/img/skill_img.png"
@@ -491,7 +507,7 @@
 
         <!-- Job Section -->
         <section
-            class="flex flex-col-reverse xl:flex-row items-center justify-between gap-10 px-8 sm:px-10 lg:px-24 py-10 my-20"
+            class="flex flex-col-reverse xl:flex-row items-center justify-between gap-10 px-8 sm:px-10 lg:px-24 py-10 mt-10 sm:mt-20 mb-0"
         >
             <!-- Job Left Section -->
             <section
@@ -503,18 +519,22 @@
 
                 <span class="block w-full h-[1px] bg-redOrange/50 my-7"></span>
 
-                <div class="grid grid-cols-2 gap-y-5">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2 gap-y-5 h-[350px] md:h-auto xl:h-[207px] overflow-y-auto"
+                >
                     <div class="flex items-center gap-5">
                         <div
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             Database administrator
                         </span>
                     </div>
@@ -524,12 +544,14 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             Help desk technician
                         </span>
                     </div>
@@ -539,12 +561,14 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             Tech support specialist
                         </span>
                     </div>
@@ -554,12 +578,14 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             IT support specialist
                         </span>
                     </div>
@@ -569,12 +595,14 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             IT specialist
                         </span>
                     </div>
@@ -584,12 +612,14 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             IT technician
                         </span>
                     </div>
@@ -599,12 +629,14 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             Systems analyst
                         </span>
                     </div>
@@ -614,12 +646,14 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             Computer user specialist
                         </span>
                     </div>
@@ -629,12 +663,14 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             Network engineer
                         </span>
                     </div>
@@ -644,16 +680,34 @@
                             class="flex items-center justify-center bg-redOrange/10 rounded-full"
                         >
                             <img
-                                class="dark:brightness-200 p-3 rounded-full dark:invert"
+                                class="dark:brightness-200 rounded-full dark:invert"
                                 src="./src/img/right-arrow.png"
                                 alt="right-arrow"
                             />
                         </div>
-                        <span class="font-medium text-lg dark:text-white">
+                        <span
+                            class="font-medium text-sm sm:text-lg dark:text-white"
+                        >
                             IT assistant
                         </span>
                     </div>
                 </div>
+            </section>
+
+            <!-- Job Right Section -->
+            <section
+                class="flex items-end bg-white dark:bg-gray-900 rounded-3xl px-7 py-10 size-full xl:w-1/2 xl:h-[400px] overflow-y-auto shadow-xl"
+            >
+                <img
+                    class="inline-block dark:hidden w-full"
+                    src="./src/img/job_img.png"
+                    alt="job_img"
+                />
+                <img
+                    class="hidden dark:inline-block w-full"
+                    src="./src/img/job_img-for-dark.png"
+                    alt="job_img"
+                />
             </section>
         </section>
 
