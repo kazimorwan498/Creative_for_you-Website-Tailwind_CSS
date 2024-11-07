@@ -15,7 +15,7 @@
     <body class="bg-gray-100 dark:bg-slate-800">
         <!-- Header Section -->
         <header
-            class="flex items-center justify-between px-3 sm:px-5 lg:px-10 py-3 bg-white dark:bg-slate-800 shadow-lg"
+            class="sticky top-0 flex items-center justify-between px-3 sm:px-5 lg:px-10 py-3 bg-white dark:bg-slate-800 shadow-lg"
         >
             <img
                 class="inline-block dark:hidden"
@@ -78,7 +78,7 @@
 
                 <div class="inline-block lg:hidden relative">
                     <button
-                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white pBtn"
+                        class="p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white phoneMenu"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -97,12 +97,10 @@
                     </button>
 
                     <nav
-                        class="hidden absolute top-[60px] right-0 w-56 bg-gray-100 dark:bg-slate-800 shadow-lg py-5 rounded-lg pNav border border-redOrange"
+                        class="hidden absolute top-[60px] right-0 w-56 bg-gray-100 dark:bg-slate-800 shadow-lg py-5 rounded-lg phoneNav border border-redOrange"
                     >
-                        <ul>
-                            <li
-                                class="hover:bg-redOrange hover:text-white dark:text-white cursor-pointer"
-                            >
+                        <ul class="space-y-2">
+                            <li class="text-white bg-redOrange cursor-pointer">
                                 <a class="block py-2 px-7" href="#">Home</a>
                             </li>
                             <li
@@ -161,7 +159,7 @@
 
         <!-- Hero Section -->
         <section
-            class="flex flex-col-reverse xl:flex-row items-center justify-between gap-5 px-10 sm:px-24 py-10"
+            class="flex flex-col-reverse xl:flex-row items-center justify-between gap-5 px-8 sm:px-10 lg:px-24 py-10"
         >
             <section class="py-3">
                 <p
@@ -245,12 +243,12 @@
 
                 <div class="space-x-5">
                     <button
-                        class="bg-redOrange hover:bg-transparent text-white hover:text-redOrange font-medium tracking-wide px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+                        class="bg-redOrange hover:bg-transparent text-white hover:text-redOrange font-medium tracking-wide text-nowrap px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
                     >
                         Sign up
                     </button>
                     <button
-                        class="bg-white dark:bg-gray-900 text-black dark:text-gray-300 hover:text-redOrange dark:hover:text-redOrange font-medium tracking-wide px-5 py-2 border-2 border-gray-200 hover:border-redOrange dark:hover:border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+                        class="bg-white dark:bg-gray-900 text-black dark:text-gray-300 hover:text-redOrange dark:hover:text-redOrange font-medium tracking-wide text-nowrap px-5 py-2 border-2 border-gray-200 hover:border-redOrange dark:hover:border-redOrange rounded-lg transition-all duration-200 active:scale-95"
                     >
                         Learn more
                     </button>
@@ -264,12 +262,56 @@
             />
         </section>
 
-        <script>
-            const pBtn = document.querySelector(".pBtn"),
-                pNav = document.querySelector(".pNav");
+        <!-- Certificate Section -->
+        <section
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 justify-items-center items-center gap-5 px-8 sm:px-10 lg:px-24 py-10 bg-white dark:bg-gray-900 lg:divide-x-2 lg:divide-gray-400"
+        >
+            <p
+                class="text-black dark:text-white text-lg col-span-1 sm:col-span-3 lg:col-span-1"
+            >
+                Pave your path to career success by gaining a professional
+                Google certificate with the support of C4U
+            </p>
 
-            pBtn.addEventListener("click", () => {
-                pNav.classList.toggle("hidden");
+            <img
+                class="w-full h-[70px] sm:h-[135px] object-contain px-10"
+                src="./src/img/google_logo.png"
+                alt="Google"
+            />
+
+            <div class="w-full border-none sm:border-l-2 border-gray-400 px-10">
+                <img
+                    class="w-full h-[135px] object-contain inline-block dark:hidden"
+                    src="./src/img/work_&_pensions_logo.png"
+                    alt="work_&_pensions_logo"
+                />
+                <img
+                    class="w-full h-[135px] object-contain hidden dark:inline-block"
+                    src="./src/img/work_&_pensions_logo-for-dark.png"
+                    alt="work_&_pensions_logo"
+                />
+            </div>
+
+            <div class="w-full border-none sm:border-l-2 border-gray-400 px-10">
+                <img
+                    class="w-full h-[70px] sm:h-[135px] object-contain inline-block dark:hidden"
+                    src="./src/img/logo.png"
+                    alt="certificate_section_logo"
+                />
+                <img
+                    class="w-full h-[70px] sm:h-[135px] object-contain hidden dark:inline-block"
+                    src="./src/img/logo-for-dark.png"
+                    alt="certificate_section_logo"
+                />
+            </div>
+        </section>
+
+        <script>
+            const phoneMenu = document.querySelector(".phoneMenu"),
+                phoneNav = document.querySelector(".phoneNav");
+
+            phoneMenu.addEventListener("click", () => {
+                phoneNav.classList.toggle("hidden");
             });
 
             const htmlTag = document.querySelector("html"),
