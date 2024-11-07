@@ -17,17 +17,23 @@
         <header
             class="sticky top-0 flex items-center justify-between px-3 sm:px-5 lg:px-10 py-3 bg-white dark:bg-slate-800 shadow-lg"
         >
-            <img
-                class="inline-block dark:hidden"
-                src="./src/img/logo.png"
-                alt="logo"
-            />
-            <img
-                class="hidden dark:inline-block"
-                src="./src/img/logo-for-dark.png"
-                alt="logo"
-            />
+            <div>
+                <!-- Logo for light theme -->
+                <img
+                    class="inline-block dark:hidden"
+                    src="./src/img/logo.png"
+                    alt="logo"
+                />
 
+                <!-- Logo for dark theme -->
+                <img
+                    class="hidden dark:inline-block"
+                    src="./src/img/logo-for-dark.png"
+                    alt="logo"
+                />
+            </div>
+
+            <!-- Nav for large to higher screen -->
             <ul
                 class="hidden lg:flex items-center justify-center gap-5 text-black dark:text-white"
             >
@@ -52,6 +58,7 @@
             </ul>
 
             <div class="flex items-center gap-5 h-full">
+                <!-- Buttons for medium to higher screen -->
                 <button
                     class="hidden sm:inline-block bg-redOrange hover:bg-transparent text-white hover:text-redOrange px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
                 >
@@ -76,7 +83,9 @@
                     </svg>
                 </button>
 
+                <!-- Nav for small & smaller screen -->
                 <div class="inline-block lg:hidden relative">
+                    <!-- Menu button for medium & lower screen -->
                     <button
                         class="p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white phoneMenu"
                     >
@@ -96,6 +105,7 @@
                         </svg>
                     </button>
 
+                    <!-- Nav display extra small screen to medium screen -->
                     <nav
                         class="hidden absolute top-[60px] right-0 w-56 bg-gray-100 dark:bg-slate-800 shadow-lg py-5 rounded-lg phoneNav border border-redOrange"
                     >
@@ -122,10 +132,12 @@
                             </li>
                         </ul>
 
+                        <!-- Horizontal line display extra small screen to small screen -->
                         <span
                             class="block sm:hidden w-full h-[1px] bg-gray-400 dark:bg-slate-700 my-5"
                         ></span>
 
+                        <!-- Buttons display extra small screen to small screen -->
                         <div class="flex sm:hidden flex-col gap-5 px-5">
                             <button
                                 class="flex items-center justify-center gap-5 px-3 py-2 rounded-full bg-transparent hover:bg-redOrange hover:text-white dark:text-white border-2 border-black dark:border-white hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
@@ -157,11 +169,13 @@
             </div>
         </header>
 
-        <!-- Hero Section -->
+        <!-- Hero Section. This Section xs screen to lg screen display column-reverse & xl to higher display flex-row -->
         <section
             class="flex flex-col-reverse xl:flex-row items-center justify-between gap-5 px-8 sm:px-10 lg:px-24 py-10"
         >
+            <!-- Hero left section -->
             <section class="py-3">
+                <!-- Heros Breadcrumb -->
                 <p
                     class="text-sm sm:text-lg font-bold dark:text-white mb-8 tracking-wide"
                 >
@@ -169,6 +183,7 @@
                     <span class="text-redOrange"> - </span> Engage
                 </p>
 
+                <!-- Heros Heading -->
                 <h1
                     class="dark:text-white text-4xl sm:text-6xl font-bold mb-14 leading-normal"
                 >
@@ -180,12 +195,14 @@
                     Certificate
                 </h1>
 
+                <!-- Heros Description -->
                 <p class="dark:text-white text-sm sm:text-lg mb-10">
                     This is your path to a career in IT. In this program, you’ll
                     learn in-demand skills with no degree or experience
                     required.
                 </p>
 
+                <!-- Heros Section Course State -->
                 <div
                     class="flex flex-wrap justify-center sm:justify-start w-full gap-10 mb-10"
                 >
@@ -242,11 +259,14 @@
                 </div>
 
                 <div class="space-x-5">
+                    <!-- Sign up Button -->
                     <button
                         class="bg-redOrange hover:bg-transparent text-white hover:text-redOrange font-medium tracking-wide text-nowrap px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
                     >
                         Sign up
                     </button>
+
+                    <!-- Learn About Creative for you -->
                     <button
                         class="bg-white dark:bg-gray-900 text-black dark:text-gray-300 hover:text-redOrange dark:hover:text-redOrange font-medium tracking-wide text-nowrap px-5 py-2 border-2 border-gray-200 hover:border-redOrange dark:hover:border-redOrange rounded-lg transition-all duration-200 active:scale-95"
                     >
@@ -255,6 +275,7 @@
                 </div>
             </section>
 
+            <!-- Hero right section -->
             <img
                 class="xl:ms-auto w-[547px]"
                 src="./src/img/banner_img.png"
@@ -266,6 +287,7 @@
         <section
             class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 justify-items-center items-center px-8 sm:px-10 lg:px-24 py-10 bg-white dark:bg-gray-900 lg:divide-x-2 divide-gray-400"
         >
+            <!-- Describe Certification Company -->
             <p
                 class="text-black dark:text-white text-lg col-span-1 sm:col-span-3 lg:col-span-1 p-5"
             >
@@ -274,7 +296,7 @@
             </p>
 
             <div
-                class="flex items-center w-full h-full border-l-none border-t-2 sm:border-t-0 sm:border-l-2 border-gray-400 px-10 py-5"
+                class="flex items-center w-full h-full border-l-none border-t-2 sm:border-t-0 xl:border-l-2 border-gray-400 px-10 py-5"
             >
                 <img
                     class="w-full h-[70px] sm:h-[135px] object-contain"
@@ -286,11 +308,13 @@
             <div
                 class="flex items-center w-full h-full border-l-none border-t-2 sm:border-t-0 sm:border-l-2 border-gray-400 px-10 py-5"
             >
+                <!-- Certification logo for light theme -->
                 <img
                     class="w-full h-[100px] object-contain inline-block dark:hidden"
                     src="./src/img/work_&_pensions_logo.png"
                     alt="work_&_pensions_logo"
                 />
+                <!-- Certification logo for dark theme -->
                 <img
                     class="w-full h-[100px] object-contain hidden dark:inline-block"
                     src="./src/img/work_&_pensions_logo-for-dark.png"
@@ -301,11 +325,13 @@
             <div
                 class="w-full h-full border-l-none border-t-2 sm:border-t-0 sm:border-l-2 border-gray-400 px-10 py-5"
             >
+                <!-- Certification logo for light theme -->
                 <img
                     class="w-full h-[70px] sm:h-[135px] object-contain inline-block dark:hidden"
                     src="./src/img/logo.png"
                     alt="certificate_section_logo"
                 />
+                <!-- Certification logo for dark theme -->
                 <img
                     class="w-full h-[70px] sm:h-[135px] object-contain hidden dark:inline-block"
                     src="./src/img/logo-for-dark.png"
