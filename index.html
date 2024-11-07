@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="./src/main.css" />
     </head>
 
-    <body>
+    <body class="bg-gray-100 dark:bg-slate-800">
         <!-- Header Section -->
         <header
-            class="flex items-center justify-between px-10 py-3 bg-white dark:bg-slate-800 shadow-lg"
+            class="flex items-center justify-between px-3 sm:px-5 lg:px-10 py-3 bg-white dark:bg-slate-800 shadow-lg"
         >
             <img
                 class="inline-block dark:hidden"
@@ -97,26 +97,26 @@
                     </button>
 
                     <nav
-                        class="hidden absolute top-[60px] right-0 w-56 bg-gray-100 shadow-lg py-5 rounded-lg pNav border border-redOrange"
+                        class="hidden absolute top-[60px] right-0 w-56 bg-gray-100 dark:bg-slate-800 shadow-lg py-5 rounded-lg pNav border border-redOrange"
                     >
                         <ul>
                             <li
-                                class="hover:bg-redOrange hover:text-white cursor-pointer"
+                                class="hover:bg-redOrange hover:text-white dark:text-white cursor-pointer"
                             >
                                 <a class="block py-2 px-7" href="#">Home</a>
                             </li>
                             <li
-                                class="hover:bg-redOrange hover:text-white cursor-pointer"
+                                class="hover:bg-redOrange hover:text-white dark:text-white cursor-pointer"
                             >
                                 <a class="block py-2 px-7" href="#">About us</a>
                             </li>
                             <li
-                                class="hover:bg-redOrange hover:text-white cursor-pointer"
+                                class="hover:bg-redOrange hover:text-white dark:text-white cursor-pointer"
                             >
                                 <a class="block py-2 px-7" href="#">Upskill</a>
                             </li>
                             <li
-                                class="hover:bg-redOrange hover:text-white cursor-pointer"
+                                class="hover:bg-redOrange hover:text-white dark:text-white cursor-pointer"
                             >
                                 <a class="block py-2 px-7" href="#"
                                     >Contact us</a
@@ -125,12 +125,12 @@
                         </ul>
 
                         <span
-                            class="block sm:hidden w-full h-[1px] bg-gray-400 my-5"
+                            class="block sm:hidden w-full h-[1px] bg-gray-400 dark:bg-slate-700 my-5"
                         ></span>
 
                         <div class="flex sm:hidden flex-col gap-5 px-5">
                             <button
-                                class="flex items-center justify-center gap-5 p-3 rounded-full bg-gray-100 hover:bg-redOrange hover:text-white border-2 border-black hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
+                                class="flex items-center justify-center gap-5 px-3 py-2 rounded-full bg-transparent hover:bg-redOrange hover:text-white dark:text-white border-2 border-black dark:border-white hover:border-redOrange transition-all duration-200 active:scale-95 mode-switch-2"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -158,6 +158,83 @@
                 </div>
             </div>
         </header>
+
+        <!-- Hero Section -->
+        <section class="flex px-28 py-10">
+            <section class="py-3 w-full">
+                <p class="text-lg font-bold dark:text-white mb-8">
+                    Discover <span class="text-redOrange"> - </span> Interact
+                    <span class="text-redOrange"> - </span> Engage
+                </p>
+
+                <h1 class="dark:text-white text-6xl font-bold mb-14">
+                    Google
+                    <span class="text-redOrange">IT Support</span> Certificate
+                </h1>
+
+                <p class="dark:text-white text-lg mb-10">
+                    This is your path to a career in IT. In this program, you’ll
+                    learn in-demand skills with no degree or experience
+                    required.
+                </p>
+
+                <div class="flex w-full gap-10 mb-10">
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="text-springGreen text-2xl font-bold"
+                            >438</span
+                        >
+                        <span class="text-lg text-slate-900 dark:text-gray-400"
+                            >Videos</span
+                        >
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="text-springGreen text-2xl font-bold"
+                            >151</span
+                        >
+                        <span class="text-lg text-slate-900 dark:text-gray-400"
+                            >Readings</span
+                        >
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="text-springGreen text-2xl font-bold"
+                            >108</span
+                        >
+                        <span class="text-lg text-slate-900 dark:text-gray-400"
+                            >Quizzes</span
+                        >
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="text-springGreen text-2xl font-bold"
+                            >24</span
+                        >
+                        <span class="text-lg text-slate-900 dark:text-gray-400"
+                            >Exercises</span
+                        >
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <span class="text-springGreen text-2xl font-bold"
+                            >4</span
+                        >
+                        <span class="text-lg text-slate-900 dark:text-gray-400"
+                            >Assignments</span
+                        >
+                    </div>
+                </div>
+
+                <div class="space-x-5">
+                    <button
+                        class="bg-redOrange hover:bg-transparent text-white hover:text-redOrange font-medium tracking-wide px-5 py-2 border-2 border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+                    >
+                        Sign up
+                    </button>
+                    <button
+                        class="bg-white dark:bg-gray-700 text-black dark:text-gray-300 hover:text-redOrange dark:hover:text-redOrange font-medium tracking-wide px-5 py-2 border-2 border-gray-200 hover:border-redOrange dark:hover:border-redOrange rounded-lg transition-all duration-200 active:scale-95"
+                    >
+                        Learn more
+                    </button>
+                </div>
+            </section>
+        </section>
 
         <script>
             const pBtn = document.querySelector(".pBtn"),

@@ -6,6 +6,7 @@ module.exports = {
         extend: {
             colors: {
                 redOrange: "rgb(244, 67, 53)",
+                springGreen: "rgb(0,255,132)",
             },
         },
     },
