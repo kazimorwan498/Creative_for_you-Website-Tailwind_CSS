@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-}
-
 @layer utilities {
+    .jakarta {
+        font-family: "Plus Jakarta Sans", sans-serif;
+    }
+
     .skill-tag {
         @apply dark:text-white hover:text-white text-xs sm:text-base px-3 py-1 hover:bg-redOrange border-[1.5px] border-redOrange rounded-full transition-all duration-200 cursor-pointer;
     }
