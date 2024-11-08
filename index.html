@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="./src/main.css" />
     </head>
 
-    <body class="bg-gray-100 dark:bg-slate-800 jakarta">
+    <body class="bg-gray-100 dark:bg-slate-800 text-slate-900 jakarta">
         <!-- Header Section -->
         <header
             class="sticky top-0 flex items-center justify-between px-3 sm:px-5 lg:px-10 py-3 bg-white dark:bg-slate-800 shadow-lg z-10"
@@ -88,7 +88,7 @@
                     Register Interest
                 </button>
                 <button
-                    class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white size-[50px] transition-[scale] duration-200 active:scale-95 mode-switch"
+                    class="hidden sm:inline-block p-3 rounded-full bg-gray-100 dark:bg-slate-600 text-black dark:text-white size-[50px] transition-all duration-200 active:scale-95 mode-switch"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -2371,17 +2371,18 @@
             </ul>
         </footer>
 
+        <p
+            class="dark:text-white text-center text-sm py-5 border-t border-gray-400 dark:border-gray-700"
+        >
+            Copyright &copy; 2024 Creatives For You LTD.
+        </p>
+
         <script>
-            const phoneMenu = document.querySelector(".phoneMenu"),
-                phoneNav = document.querySelector(".phoneNav");
-
-            phoneMenu.addEventListener("click", () => {
-                phoneNav.classList.toggle("hidden");
-            });
-
             const htmlTag = document.querySelector("html"),
                 modeSwitch = document.querySelector(".mode-switch"),
-                modeSwitch2 = document.querySelector(".mode-switch-2");
+                modeSwitch2 = document.querySelector(".mode-switch-2"),
+                phoneMenu = document.querySelector(".phoneMenu"),
+                phoneNav = document.querySelector(".phoneNav");
 
             modeSwitch.addEventListener("click", function () {
                 htmlTag.classList.toggle("dark");
@@ -2389,6 +2390,10 @@
 
             modeSwitch2.addEventListener("click", function () {
                 htmlTag.classList.toggle("dark");
+            });
+
+            phoneMenu.addEventListener("click", () => {
+                phoneNav.classList.toggle("hidden");
             });
         </script>
     </body>
